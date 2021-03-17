@@ -31,20 +31,24 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   # Location Permissions
-  location: ^3.0.0
-  flutter_exif: ^1.0.0
+  location:
+  flutter_exif:
+  permission_handler: ^6.1.0
+
 
   # Maps Ui
   google_maps_flutter:
+  geocoder: ^0.2.1
 
   # Json
   json_annotation:
 
   # Image Handling
-  file_picker:
+  exif:
+  photo_manager:
 
   # Image Picker
-  image_picker_web: ^1.0.9
+  image_picker: ^0.7.2+1
   path: ^1.7.0
   mime_type: ^0.3.2
 

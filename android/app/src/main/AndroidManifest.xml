@@ -23,8 +23,6 @@
             <meta-data android:name="com.google.android.geo.API_KEY"
                 android:value="AIzaSyCiFeWtk5oKv95CzhZxWOF7vuJ9e8YGN5c"/>
 
-            <!-- Permissions for android location-->
-            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
             <!-- Displays an Android View that continues showing the launch screen
                  Drawable until Flutter paints its first frame, then this splash
