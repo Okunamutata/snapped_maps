@@ -23,7 +23,6 @@ class LocationCubit extends Cubit<LocationState> {
       hasPermissions = true;
     } else {
       // fail
-      /// if result is fail, you can call `PhotoManager.openSetting();`  to open android/ios applicaton's setting to get permission
       PhotoManager.openSetting();
     }
   }
@@ -36,6 +35,7 @@ class LocationCubit extends Cubit<LocationState> {
     AssetPathEntity data = list[(list.length / 2).ceil()];
     List<AssetEntity> imageList = await data.assetList;
 
+    // Grab the 1st image in the available list of photos
     final AssetEntity asset = imageList[0];
     Address address = await _getAddress(asset.latitude, asset.longitude);
     emit(LocationLoaded(
